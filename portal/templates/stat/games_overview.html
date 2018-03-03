@@ -1,0 +1,57 @@
+{% load static %}
+<div class="row mb-3 text-center">
+	<div class="col-lg-5">
+			<div class="card mb-4 box-shadow mx-auto" style="max-width: 30rem;">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">Counter-Strike: <br>Global Offensive</h4>
+				</div>
+				<img class="card-img-top" src="{% static 'portal/img/index/CSGO.jpg' %}" alt="Card image cap">
+				<div class="card-body">
+					<h1 class="card-title pricing-card-title"><small class="text-muted text-danger">Prizes worth</small> ₹1,00,000 </h1>
+					<ul class="list-unstyled mt-3 mb-4">
+						<li>Single Stage Knockout Prelims</li>
+						<li>Best of 3 Semis and Finals</li>
+						<li>Awesome Goodies and Skins</li>
+						<li>Travel Reimbursement for top 8</li>
+					</ul>
+					<a class="btn btn-lg btn-block btn-outline-danger" href="{% url 'portal:dashboard' %}">Visit Team Dashboard</a>
+				</div>
+			</div>
+		</div>
+	<div class="col order-lg-first">
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">FIFA 18</h4>
+			</div>
+			<img class="card-img-top" src="{% static 'portal/img/index/FIFA.jpg' %}" alt="Card image cap">
+			<div class="card-body">
+				<h3 class="card-title pricing-card-title">₹50,000 <small class="text-muted">to be won</small></h3>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>Multi-tier Knockout 1v1s</li>
+					<li>Every day Prize Pool</li>
+					<li>Games in Home &amp; Away format.</li>
+				</ul>
+				<a class="btn btn-lg btn-block btn-outline-primary" href="{% url 'portal:fifa' %}">Learn More</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Gaming Arena</h4>
+			</div>
+			<img class="card-img-top" src="{% static 'portal/img/index/ARENA.jpg' %}" alt="Card image cap">
+			<div class="card-body">
+				<h3 class="card-title pricing-card-title"><small class="text-muted">Explore and Connect</small></h3>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>PS4/XBox Consoles</li>
+					<li>Over 15+ Game Titles</li>
+					<li>Stalls and Showcases</li>
+					<li>Connect: <a href="https://aparoksha.org/" target="_blank">Aparoksha, IIIT Allahabad <i class="fa fa-external-link" aria-hidden="true"></i></li></a>
+				</ul>
+				<a class="btn btn-lg btn-block btn-outline-primary" href="{% url 'portal:all_games' %}">Explore</a>
+			</div>
+		</div>
+	</div>
+</div>

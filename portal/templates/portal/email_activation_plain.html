@@ -1,0 +1,8 @@
+{% autoescape off %}
+Hi {{ user.first_name|default_if_none:"there" }},
+
+Thank you for registering on the Frag-Fest Portal. Please verify your email:
+
+http://{{ domain }}{% url 'portal:activate' uidb64=uid token=token %}
+
+{% endautoescape %}

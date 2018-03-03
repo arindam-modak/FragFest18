@@ -1,0 +1,36 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+	<div class="col-12 col-lg-9 pb-4 mx-auto" id="cover-image">
+		<img src="{% static 'portal/img/index/banner.png' %}" class="img-fluid img-thumbnail" alt="Frag-Fest Cover">
+	</div>
+	<div class="col-lg-3">
+		<div class="card border-danger mx-auto text-center mb-3" style="max-width: 18rem;">
+			<div class="card-header text-danger font-weight-bold">
+				<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Gamer Alert
+			</div>
+			<div class="card-body">
+				<h5 class="card-title text-white frag-fest-logo">Frag-Fest' 18</h5>
+				<p class="card-text">One of the most awaited events of IIIT Allahabad.</p>
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item text-white"><i class="fa fa-calendar" aria-hidden="true"></i> 16th-18th March</li>
+				<li class="list-group-item"><i class="fa fa-clock-o" aria-hidden="true"></i> CS:GO Prelims: 7th March</li>
+				
+			</ul>
+			<div class="card-footer text-white">
+				<div class="btn-group">
+					<a href="{% url 'portal:event' %}" class="btn btn-outline-danger">Learn More</a>
+				</div>
+				<div class="btn-group">
+					<a href="{{ SOCIAL.facebook }}" class="btn btn-outline-primary fbk-button" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include 'stat/games_overview.html' %}
+
+{% endblock %}
